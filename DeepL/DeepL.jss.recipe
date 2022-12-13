@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of DeepL and imports it into your JSS.</string>
 	<key>Identifier</key>
-	<string>local.pkg.sm.jss.DeepL</string>
+	<string>com.github.die.jss.DeepL</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -30,7 +30,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>local.pkg.sm.pkg.DeepL</string>
+	<string>com.github.die.pkg.DeepL</string>
 	<key>Process</key>
 	<array>
 		<dict>

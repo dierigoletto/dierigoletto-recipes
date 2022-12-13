@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of DeepL.</string>
 	<key>Identifier</key>
-	<string>local.pkg.sm.download.DeepL</string>
+	<string>com.github.die.download.DeepL</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
