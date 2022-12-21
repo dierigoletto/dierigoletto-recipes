@@ -2,58 +2,35 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Comment</key>
-	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
-	<key>Description</key>
-	<string>Downloads the latest version of Notion.</string>
 	<key>Identifier</key>
-	<string>com.github.die.download.Notion</string>
+	<string>local.download.Notion</string>
 	<key>Input</key>
 	<dict>
+		<key>DOWNLOAD_URL</key>
+		<string>https://www.notion.so/desktop/mac/download</string>
 		<key>NAME</key>
 		<string>Notion</string>
+		<key>USER_AGENT</key>
+		<string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36</string>
 	</dict>
-	<key>MinimumVersion</key>
-	<string>1.0.0</string>
-	<key>Process</key>
-	<array>
+	<key>ParentRecipe</key>
+	<string>com.github.swy.download.Notion</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
 		<dict>
-			<key>Arguments</key>
+			<key>com.github.swy.download.Notion</key>
 			<dict>
-				<key>filename</key>
-				<string>%NAME%.dmg</string>
-				<key>url</key>
-				<string>https://www.notion.so/desktop/apple-silicon/download</string>
+				<key>git_hash</key>
+				<string>780f6fb78638de945cb0c8f22dd699d78057d812</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.swy-recipes/Notion Labs, Inc./Notion.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>7dabc1dec24137063e5215e0a8dd3d79d0c42608bbbda143129f013cee0d319e</string>
 			</dict>
-			<key>Processor</key>
-			<string>URLDownloader</string>
 		</dict>
-		<dict>
-			<key>Processor</key>
-			<string>EndOfCheckPhase</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>input_path</key>
-				<string>%pathname%/Notion.app</string>
-				<key>requirement</key>
-				<string>identifier "notion.id" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = LBQJ96FQ8D</string>
-			</dict>
-			<key>Processor</key>
-			<string>CodeSignatureVerifier</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>input_plist_path</key>
-				<string>%pathname%/Notion.app/Contents/Info.plist</string>
-				<key>plist_version_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-			<key>Processor</key>
-			<string>Versioner</string>
-		</dict>
-	</array>
+	</dict>
 </dict>
 </plist>

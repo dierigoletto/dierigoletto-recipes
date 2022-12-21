@@ -2,27 +2,44 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Comment</key>
-	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
-	<key>Description</key>
-	<string>Downloads the latest version of Notion and creates a package.</string>
 	<key>Identifier</key>
-	<string>com.github.die.pkg.Notion</string>
+	<string>local.pkg.Notion</string>
 	<key>Input</key>
 	<dict>
+		<key>DOWNLOAD_URL</key>
+		<string>https://www.notion.so/desktop/mac/download</string>
 		<key>NAME</key>
 		<string>Notion</string>
+		<key>USER_AGENT</key>
+		<string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36</string>
 	</dict>
-	<key>MinimumVersion</key>
-	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.die.download.Notion</string>
-	<key>Process</key>
-	<array>
+	<string>com.github.swy.pkg.Notion</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict/>
+		<key>parent_recipes</key>
 		<dict>
-			<key>Processor</key>
-			<string>AppPkgCreator</string>
+			<key>com.github.swy.download.Notion</key>
+			<dict>
+				<key>git_hash</key>
+				<string>780f6fb78638de945cb0c8f22dd699d78057d812</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.swy-recipes/Notion Labs, Inc./Notion.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>7dabc1dec24137063e5215e0a8dd3d79d0c42608bbbda143129f013cee0d319e</string>
+			</dict>
+			<key>com.github.swy.pkg.Notion</key>
+			<dict>
+				<key>git_hash</key>
+				<string>bf17250822c32d0b250c867a1d2bd4097ce203eb</string>
+				<key>path</key>
+				<string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.swy-recipes/Notion Labs, Inc./Notion.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>f5614208103de00b448e065112b99cadac68b93ff2e57b60604b87e268028036</string>
+			</dict>
 		</dict>
-	</array>
+	</dict>
 </dict>
 </plist>
