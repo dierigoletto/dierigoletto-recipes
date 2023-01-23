@@ -9,14 +9,14 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Notion</string>
+        <string>NotionARM</string>
+        <key>CATEGORY</key>
+        <string>Programme</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.0.0</string>
     <key>ParentRecipe</key>
     <string>com.github.die.download.NotionARM</string>
-    <key>CATEGORY</key>
-    <string>Programme</string>
    <key>Process</key>
     <array>
         <dict>

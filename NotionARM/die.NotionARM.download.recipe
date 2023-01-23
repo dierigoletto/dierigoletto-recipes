@@ -14,7 +14,7 @@ arm64: https://www.notion.so/desktop/apple-silicon/download
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Notion</string>
+        <string>NotionARM</string>
         <key>USER_AGENT</key>
         <string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36</string>
         <key>DOWNLOAD_URL</key>
