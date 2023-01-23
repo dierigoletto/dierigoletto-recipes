@@ -10,7 +10,7 @@ x86_64: https://www.notion.so/desktop/mac/download
 arm64: https://www.notion.so/desktop/apple-silicon/download
 </string>
     <key>Identifier</key>
-    <string>com.github.die.download.Notion</string>
+    <string>com.github.die.download.NotionARM</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
