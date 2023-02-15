@@ -23,7 +23,7 @@
 				<key>filename</key>
 				<string>%NAME%.dmg</string>
 				<key>url</key>
-				<string>https://d1gl0nrskhax8d.cloudfront.net/macos/photo2/2.0.4/affinity-photo-2.0.4.dmg</string>
+				<string>https://store.serif.com/download/89007d/</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
