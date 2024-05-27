@@ -12,8 +12,6 @@
 	<dict>
 		<key>NAME</key>
 		<string>ChatGPT</string>
-		<key>CATEGORY</key>
-		<string>Programme</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
@@ -22,18 +20,8 @@
 	<key>Process</key>
 	<array>
 		<dict>
-			<dict>
 			<key>Processor</key>
 			<string>AppPkgCreator</string>
-		</dict>
-		<dict>
-		<key>Arguments</key>
-		<dict>
-			<key>pkg_category</key>
-			<string>%CATEGORY%</string>
-		</dict>
-		<key>Processor</key>
-		<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
 		</dict>
 	</array>
 </dict>
